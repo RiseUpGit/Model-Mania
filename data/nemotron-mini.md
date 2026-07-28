@@ -1,23 +1,23 @@
 ---
 slug: nemotron-mini
-name: Nemotron Mini
+name: Nemotron Mini 4B
 provider: NVIDIA
 license: apache-2.0
 branch: gpu-only
-parameters_b: null
-size_gb: 2.51
+parameters_b: 4
+size_gb: 2.70
 quant: Q4_K_M
 vram_min_gb: 3
 vram_recommended_gb: 4
 system_ram_min_gb: 2
 system_ram_recommended_gb: 4
 context_window: 8192
-modalities: [text]
+modalities: [text, tools]
 ollama_tag: nemotron-mini:latest
 local_verified: true
 verified_date: 2026-07-28
 verified_by: Newton
-notes: Lightweight instruct/chat model. Easily fits fully on 5070 Ti.
+notes: Commercial-friendly small model optimized for roleplay, RAG QA, and function calling. Verified on local Ollama.
 ---
 
 ## Summary

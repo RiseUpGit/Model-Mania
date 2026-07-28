@@ -1,6 +1,6 @@
 ---
 slug: qwen2.5-coder-1.5b
-name: Qwen2.5 Coder 1.5B
+name: Qwen 2.5 Coder 1.5B Instruct
 provider: Alibaba
 license: apache-2.0
 branch: gpu-only
@@ -10,34 +10,31 @@ quant: Q4_K_M
 vram_min_gb: 1
 vram_recommended_gb: 2
 system_ram_min_gb: 1
-system_ram_recommended_gb: 2
+system_ram_recommended_gb: 3
 context_window: 32768
 modalities: [text]
 ollama_tag: qwen2.5-coder:1.5b
-local_verified: false
-verified_date: null
-verified_by: null
-notes: Small code model. Verified size from ollama.com/library page.
+local_verified: true
+verified_date: 2026-07-28
+verified_by: Newton
+notes: Verified on-disk size 986 MB. Good balance of speed and coding quality.
 ---
 
 ## Summary
-Qwen2.5 Coder 1.5B offers a meaningful step up from 0.5B while staying tiny. Good for simple code generation tasks and quick edits.
 
-## Hardware requirements
-- **VRAM:** ~986 MB
-- **System RAM:** 1–2 GB spare
-- **GPU offload:** fully GPU
+1.5B parameter coding-focused instruct model. Handles larger context than the 0.5B variant while remaining lightweight enough for frequent local use.
 
-## Performance notes
-- Fast with noticeably better code quality than 0.5B
-- Still limited on complex multi-file reasoning
+## Usage
 
-## Local verification
-- Size source: ollama.com/library/qwen2.5-coder
-- Size: 986 MB
+```bash
+ollama run qwen2.5-coder:1.5b
+```
 
-## License/usage restrictions
-Apache 2.0
+## Hardware
 
-## Sources
-- https://ollama.com/library/qwen2.5-coder
+| Metric | Requirement |
+|--------|-------------|
+| Min VRAM | 1 GB |
+| Recommended VRAM | 2 GB |
+| Min System RAM | 1 GB |
+| Recommended System RAM | 3 GB |

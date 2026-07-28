@@ -24,6 +24,10 @@ No entry is accepted without one of:
 - official model card size
 - documented quant size from a verifiable source
 
+### Sizing provenance tags
+- `local_verified: true` — confirmed from local Ollama manifest + runtime
+- `local_verified: false` + `verified_date: null` — size from Ollama library page or public estimate only; recheck before first pull
+
 ## Workflow
 1. Identify candidate
 2. Record exact size from manifest/model card

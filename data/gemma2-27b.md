@@ -5,39 +5,36 @@ provider: Google
 license: gemma
 branch: hybrid
 parameters_b: 27
-size_gb: 16.0
+size_gb: 15.0
 quant: Q4_K_M
-vram_min_gb: 12
-vram_recommended_gb: 16
-system_ram_min_gb: 12
-system_ram_recommended_gb: 20
+vram_min_gb: 16
+vram_recommended_gb: 20
+system_ram_min_gb: 16
+system_ram_recommended_gb: 32
 context_window: 8192
 modalities: [text]
 ollama_tag: gemma2:27b
-local_verified: false
-verified_date: null
-verified_by: null
-notes: Size from ollama.com/library. Near/at VRAM ceiling on 5070 Ti; likely needs hybrid mode.
+local_verified: true
+verified_date: 2026-07-28
+verified_by: Newton
+notes: Verified on-disk size 15 GB. Hybrid GPU+RAM required.
 ---
 
 ## Summary
-Gemma 2 27B is the largest Gemma 2 model. High-quality general-purpose reasoning, but at the edge of single-GPU fit.
 
-## Hardware requirements
-- **VRAM:** near/at 16 GB ceiling
-- **System RAM:** 12–20 GB spare for hybrid
-- **GPU offload:** partial; hybrid likely needed
+Largest Gemma 2 text instruct variant. Strong reasoning, but needs partial CPU offload on this hardware.
 
-## Performance notes
-- Strong for general reasoning and chat
-- Reserve for non-real-time tasks
+## Usage
 
-## Local verification
-- Size source: ollama.com/library
-- Size: ~16.0 GB
+```bash
+ollama run gemma2:27b
+```
 
-## License/usage restrictions
-Gemma License
+## Hardware
 
-## Sources
-- https://ollama.com/library/gemma2
+| Metric | Requirement |
+|--------|-------------|
+| Min VRAM | 16 GB |
+| Recommended VRAM | 20 GB |
+| Min System RAM | 16 GB |
+| Recommended System RAM | 32 GB |

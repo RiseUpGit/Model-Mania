@@ -1,6 +1,6 @@
 ---
 slug: qwen2.5-coder-3b
-name: Qwen2.5 Coder 3B
+name: Qwen 2.5 Coder 3B Instruct
 provider: Alibaba
 license: apache-2.0
 branch: gpu-only
@@ -14,30 +14,27 @@ system_ram_recommended_gb: 4
 context_window: 32768
 modalities: [text]
 ollama_tag: qwen2.5-coder:3b
-local_verified: false
-verified_date: null
-verified_by: null
-notes: Verified size from ollama.com/library page.
+local_verified: true
+verified_date: 2026-07-28
+verified_by: Newton
+notes: Verified on-disk size 1.9 GB. Strong general-purpose coding model for local use.
 ---
 
 ## Summary
-Qwen2.5 Coder 3B is a compact code-focused model with solid instruction following. Good default for lightweight coding agents and inline edits.
 
-## Hardware requirements
-- **VRAM:** ~1.9 GB
-- **System RAM:** 2–4 GB spare
-- **GPU offload:** fully GPU
+3B parameter coding model with strong instruction following and context handling. Solid default for daily local coding assistance.
 
-## Performance notes
-- Good speed/quality tradeoff for local coding assist
-- Handles single-file generation and repair well
+## Usage
 
-## Local verification
-- Size source: ollama.com/library/qwen2.5-coder
-- Size: 1.9 GB
+```bash
+ollama run qwen2.5-coder:3b
+```
 
-## License/usage restrictions
-Apache 2.0
+## Hardware
 
-## Sources
-- https://ollama.com/library/qwen2.5-coder
+| Metric | Requirement |
+|--------|-------------|
+| Min VRAM | 2 GB |
+| Recommended VRAM | 3 GB |
+| Min System RAM | 2 GB |
+| Recommended System RAM | 4 GB |

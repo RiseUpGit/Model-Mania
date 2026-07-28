@@ -10,34 +10,31 @@ quant: Q4_K_M
 vram_min_gb: 6
 vram_recommended_gb: 7
 system_ram_min_gb: 4
-system_ram_recommended_gb: 6
+system_ram_recommended_gb: 8
 context_window: 8192
 modalities: [text]
 ollama_tag: gemma2:9b
-local_verified: false
-verified_date: null
-verified_by: null
-notes: Size from ollama.com/library.
+local_verified: true
+verified_date: 2026-07-28
+verified_by: Newton
+notes: Verified on-disk size 5.4 GB. Strong text quality at mid-size.
 ---
 
 ## Summary
-Gemma 2 9B is a strong mid-size Google instruct model with good instruction following and safety behavior.
 
-## Hardware requirements
-- **VRAM:** ~5.4 GB
-- **System RAM:** 4–6 GB spare
-- **GPU offload:** fully GPU
+9B text instruct model. Solid general-purpose quality on a single GPU.
 
-## Performance notes
-- Competitive with other 9B-tier models
-- Good general assistant candidate
+## Usage
 
-## Local verification
-- Size source: ollama.com/library
-- Size: ~5.4 GB
+```bash
+ollama run gemma2:9b
+```
 
-## License/usage restrictions
-Gemma License
+## Hardware
 
-## Sources
-- https://ollama.com/library/gemma2
+| Metric | Requirement |
+|--------|-------------|
+| Min VRAM | 6 GB |
+| Recommended VRAM | 7 GB |
+| Min System RAM | 4 GB |
+| Recommended System RAM | 8 GB |
