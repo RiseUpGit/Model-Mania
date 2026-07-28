@@ -1,0 +1,53 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+.venv/
+venv/
+env/
+.env
+.eggs/
+.tox/
+.pytest_cache/
+
+# === Generated catalog data (re-scanned on demand) ===
+data/*.json
+data/*.csv
+data/*.tmp
+
+# === OS / Editor ===
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# === Logs / Temp ===
+*.log
+*.tmp
+*.bak
+*.pid
+
+# === Ollama / Runtime artifacts ===
+ollama-ps.txt
+nvidia-smi.txt
+
+# === Archives ===
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# === Keep tracked ===
+!README.md
+!docs/**/*
+!data/*.md
+!.gitignore
