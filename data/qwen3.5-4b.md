@@ -17,12 +17,12 @@ ollama_tag: qwen3.5:4b
 local_verified: true
 verified_date: 2026-07-28
 verified_by: Newton
-notes: Verified on-disk size 3.4 GB. Strong quality at small size.
+notes: Verified on-disk size 3.4 GB. Strong quality within a small footprint.
 ---
 
 ## Summary
 
-4B instruct model with improved reasoning over the 2B variant. Still fits easily on the 5070 Ti.
+4B parameter Qwen 3.5 model. Strong instruction following and context handling for local use.
 
 ## Usage
 

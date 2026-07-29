@@ -17,12 +17,12 @@ ollama_tag: qwen3.5:2b
 local_verified: true
 verified_date: 2026-07-28
 verified_by: Newton
-notes: Verified on-disk size 2.7 GB. Solid quality-to-size ratio.
+notes: Verified on-disk size 2.7 GB. Balanced local model for daily coding and chat.
 ---
 
 ## Summary
 
-2B general-purpose instruct model. Good balance of speed and response quality.
+2B parameter Qwen 3.5 model. Good balance of speed and quality for local assistive coding.
 
 ## Usage
 

@@ -17,12 +17,12 @@ ollama_tag: qwen3.5:0.8b
 local_verified: true
 verified_date: 2026-07-28
 verified_by: Newton
-notes: Verified on-disk size 1.0 GB. Fast lightweight model.
+notes: Verified on-disk size 1.0 GB. Compact Qwen 3.5 model for lightweight local use.
 ---
 
 ## Summary
 
-0.8B general-purpose instruct model. Best for quick responses and low-resource workloads.
+Ultra-small Qwen 3.5 model. Fast inference, low VRAM, suitable for quick completions and simple tasks.
 
 ## Usage
 
