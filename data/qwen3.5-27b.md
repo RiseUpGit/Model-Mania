@@ -22,7 +22,7 @@ notes: Verified on-disk size 17 GB. Hybrid GPU+CPU offload required.
 
 ## Summary
 
-27B parameter Qwen 3.5 model. Highest quality in the Qwen 3.5 local lineup, requires partial system RAM offload.
+27B general-purpose instruct model. Strong reasoning and generation quality, but needs partial system RAM offload on this hardware.
 
 ## Usage
 
